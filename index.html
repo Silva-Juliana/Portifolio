@@ -7,23 +7,27 @@
     <link rel="stylesheet" type="text/css" href="Portifolio/CSS/estilo.css" media="screen" />
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="menu">
-            <li><a class="link-text" href="#"> Home</a></li>
-            <li><a class="link-text" href="#"> Sobre mim</a></li>
-            <li><a class="link-text" href="#"> Projetos</a></li>
-            <li><a class="link-text" href="#"> Habilidades</a></li>
-            <li><a class="link-text" href="#"> Informações para Contato</a></li>
-        </ul>
-    </nav>
+    <div class="section">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a class="link-text1" href="#"> Home</a></li>
+                <li><a class="link-text" href="#"> Sobre mim</a></li>
+                <li><a class="link-text" href="#"> Projetos</a></li>
+                <li><a class="link-text" href="#"> Habilidades e Formação Educacional</a></li>
+                <li><a class="link-text" href="#"> Informações para Contato</a></li>
+        
+            </ul>
+        </nav>
+            <img class="text-portifolio" src="images/portifolio1.png">
+    </div>
     <div class="container-about">
         <div class="text-initial">
-            <img class="image-perfil" src="images/gato.webp">
+            <img class="image-perfil" src="images/perfil.jpg">
             <h1>Juliana Gomes</h1>
             <h2> Desenvolvedora Frontend</h2>
         </div>
         <div class="about-me">
-            <span>Sobre mim</span>
+            <span class="span-about">Sobre mim</span>
             <p> 
                 Olá sou a Juliana, tenho 27 anos e moro em Barueri-SP.
                 Em janeiro de 2021 conclui meu bootcamp em Front-end. 
@@ -33,32 +37,102 @@
                 para me capacitar cada vez mais.
             </p>
         </div>
+        <div class="experience"> 
+             <span class="span-experience">Experiência Profissional</span>
+             <div class="box-experience">
+            <img class="image-icon" src="images/programacao.png">
+                <p> <span>ECONVERSE DIGITAL | Desenvolvedora front-end junior, Março de 2021 - Julho de 2021</span>
+                 - Criar ou dar manutenção em páginas de e-commerce da plataforma Vtex, ultilização de Jquery, SCSS, Git, Javascript.
+                </p>
+            </div>
+            <div class="box-experience">
+                <img class="image-icon" src="images/muffin.png">
+                <p> <span>JURÊ SEMPRE DOCE | Confeiteira </span>
+                     - Confecção e venda de bolos e doces gourmet para festas e eventos
+                </p>
+            </div>
+        </div>
     </div>
     <div class="project">
         <div class="project-text"><h1> Meus Projetos</h1></div>
         <div class="img-top-project"><img src="#"></div>
     </div>
+    <h3> Minhas habilidades</h3>
+    <div class="skills">
+        <div class="box-skills">
+            <img src="images/css-3.png">
+            <span>CSS</span>
+        </div>
+        <div class="box-skills">
+            <img src="images/script-java.png">
+            <span>JAVASCRIPT</span>
+        </div>
+        <div class="box-skills">
+            <img src="images/html.png">
+            <span>HTML</span>
+        </div>
+        <div class="box-skills">
+            <img src="images/git.png">
+            <span>GIT</span>
+        </div>
+    </div>
+    <div class="education">
+        <span class="span-education">Formação Educacional</span>
+        <div class="box-education">
+            <img class="icon-education" src="images/diplomado.png">
+            <p> <span>UNINTER: GRADUAÇÃO </span>- Análise e Desenvolvimento de Sistemas 2023-2025</p>
+        </div>
+        <div class="box-education">
+            <img class="icon-education" src="images/conhecimento.png">
+            <p> <span>NEWTAB ACADEMY: BOOTCAMP</span>- Desenvolvimento front-end junior,setembro de 2020 - janeiro de 2021</p>
+        </div>
+    </div>
+    <h4> Informações para contato</h4>
+    <form class="my-form" method="post">
+            <img class="avatar" src="images/avatar3.png">
+        <div class="box-form">
+            <h5>Formulario de Contato :</h5>
+            <label class="text-label">
+                <span>Nome Completo</span>
+                <input type="text" class="input-text" name="nome" id="name"/>
+            </label>
+            <label class="text-label">
+                <span>Email</span>
+                <input type="text" class="input-text" name="email" id="email"/>
+             </label>
+            <label class="text-label">
+                <span>Assunto</span>
+                <input type="text" class="input-text" name="assunto" id="subject"/>
+            </label>
+            <label>
+                <span>Mensagem</span>
+                <textarea class="message" name="feedback" id="feedback"></textarea>
+                <div class="button-form"><input type="button" class="button" value="Enviar" /></div>
+                
+            </label>
+        </div>
+    </form>
     <div class="contact">
-        <div class="box-contact">
-            <img src="images/whatsapp.png">
+        <a href="" target="_blank" class="box-contact">
+            <img class="img-icon" src="images/whatsapp.png">
             <span>Celular</span>
-            <a href="" target="_blank">(11)95998-5676</a>
-        </div>
-        <div class="box-contact">
-            <img src="images/github-big-logo.png">
+            <span class="span2">(11)95998-5676</span>
+        </a>
+        <a href="https://github.com/Silva-Juliana" target="_blank" class="box-contact">
+            <img class="img-icon" src="images/github-big-logo.png">
             <span>Github</span>
-            <a href="https://github.com/Silva-Juliana" target="_blank">github.com/Silva-Juliana </a>
-        </div>
-        <div class="box-contact">
-            <img src="images/linkedin.png">
+            <span class="span2">Silva-Juliana </span>
+        </a>
+        <a href="https://www.linkedin.com/in/juliana-gomes-3ba03b14a/" target="_blank" class="box-contact">
+            <img class="img-icon" src="images/linkedin.png">
             <span>Linkedin</span>
-            <a href="https://www.linkedin.com/in/juliana-gomes-3ba03b14a/" target="_blank">linkedin.com/in/juliana-gomes-3ba03b14a </a>
-        </div>
-        <div class="box-contact">
-            <img src="images/o-email.png">
+            <span class="span2">juliana-gomes-3ba03b14a </span>
+        </a>
+        <a href="" target="_blank" class="box-contact">
+            <img class="img-icon" src="images/o-email.png">
             <span>Email</span>
-            <a href="" target="_blank">silva.junia96@gmail.com </a>
-        </div>
+            <span class="span2">silva.junia96@gmail.com </span>
+        </a>
     </div>
 </body>
 </html>

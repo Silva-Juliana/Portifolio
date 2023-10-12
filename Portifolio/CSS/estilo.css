@@ -1,16 +1,40 @@
 body {
     background-color: #f4f2eb;
     margin: 0;
+    font-family: math;
 }
 
-@font-face {
-    font-family: Montserrat, sans-serif;
-    src: url(../CSS/Montserrat/Montserrat-VariableFont_wght.ttf);
- }
-
 .navbar {
-    margin-top: 3.625rem;
+    margin-top: 2.625rem;
     padding-left: 2.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.img-portifolio {
+    display: flex;
+    justify-content: end;
+
+}
+
+.text-portifolio {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1 {
+    color: #5398be;
+    margin-bottom: 0;
+    font-size: 6em;
+    font-family: math;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 2em;
 }
 
 ul {
@@ -20,11 +44,19 @@ ul {
     padding: 0;
 }
 
+.link-text1 {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #5398be;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 .link-text {
     text-decoration: none;
-    font-family: Montserrat;
     padding: 8px 16px;
     color: #242424;
+    font-size: 1.2em;
 }
 
 .link-text:hover {
@@ -34,10 +66,256 @@ ul {
 
 .image-perfil {
     border-radius: 0 6.25rem 6.25rem;
+    width: 30%;
 }
 
 .text-initial {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.line {
+    width: 25%;
+    height: 2px;
+    background-color: #5398be;
+    margin-top: 0.25rem;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me p {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 60%;
+    line-height: 150%;
+}
+
+.span-about {
+    font-size: 1.8rem;
+    width: 60%;
+    line-height: 150%;
+    color: #5398be;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.experience {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span-experience {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #5398be;
+    font-size: 6em;
+}
+
+.box-experience {
+    text-align: center;
+    width: 57%;
+    border: 1px solid #0000003b;
+    border-radius: 0 1.25rem 1.25rem;
+    padding: 1rem;
+    box-shadow: -1px 4px 7px 5px lightgray;
+    margin: 2rem;
+    display: flex
+}
+
+.image-icon {
+    width: 8%;
+}
+
+.box-experience span {
+    color: #5398be;
+    font-weight: bold;
+}
+
+.project {
+    margin: 4rem;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.4rem;
+    justify-content: center;
+    margin: 5rem 0 10rem;
+}
+.img-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.box-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.box-contact span {
+    margin: 0.5rem;
+    color: #242424;
+    font-weight: bold;
+}
+
+.box-contact .span2 {
+    text-decoration: none;
+    color: #5398be;
+}
+
+h3 {
+    color: #5398be;
+    font-size: 6em;
+    font-family: math;
+    text-align: center;
+    margin: 5rem 0 3rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.4rem;
+    justify-content: center;
+}
+
+.box-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 4px 7px 5px lightgray;
+    width: 7rem;
+    border-radius: 0 1.25rem 1.25rem;
+    padding-top: 1rem;
+}
+
+.box-skills img {
+    width: 70px;
+}
+.box-skills span {
+    margin: 0.5rem;
+    color: #242424;
+    font-weight: bold;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    align-items: center;
+}
+
+.icon-education {
+    width: 7%;
+    margin: 0 0.5rem;
+}
+
+.span-education {
+    font-weight: 400;
+    margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.box-education {
+    text-align: center;
+    width: 57%;
+    border: 1px solid #0000003b;
+    border-radius: 0 1.25rem 1.25rem;
+    padding: 1rem;
+    box-shadow: -1px 4px 7px 5px lightgray;
+    margin: 2rem;
+    display: flex;
+}
+
+.box-education span {
+    color: #5398be;
+}
+
+h4 {
+    color: #5398be;
+    font-size: 3em;
+    font-family: math;
+    margin: 5rem 0 3rem;
+    text-align: center;
+}
+
+h5 {
+    color: #242424;
+    font-size: 1.50em;
+    text-align: center;
+    margin-top: 0;
+}
+
+.my-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label span {
+    color: #00000066;
+    font-size: 1.2em;
+}
+.avatar {
+    width: 30%;
+    border-radius: 6.25rem 0;
+}
+
+.input-text {
+    color: #242424;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 2.1875rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid #08080836;
+    outline: none;
+}
+
+.button {
+    margin-top: 2rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 0.5rem 0.4rem;
+    background-color: #5398be69;
+    font-family: math;
+    width: 45%;
+    font-size: 1em;
+    border: 1px solid #5398be4a;
+    box-shadow: -1px 2px 13px 3px lightgray;
+}
+
+.message {
+    padding: 1rem;
+    background-color: rgb(244, 242, 235);
+    outline: none;
+    width: 18rem;
+    margin-top: 1.5em;
+}
+
+.button-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
