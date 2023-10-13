@@ -5,9 +5,11 @@ body {
 }
 
 .navbar {
-    margin-top: 2.625rem;
-    padding-left: 2.5rem;
     margin-bottom: 0.625rem;
+    position: fixed;
+    background: #f4f2eb;
+    padding: 1.85rem;
+    width: 100%;
 }
 
 .img-portifolio {
@@ -16,12 +18,6 @@ body {
 
 }
 
-.text-portifolio {
-    width: 20%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 h1 {
     color: #5398be;
     margin-bottom: 0;
@@ -67,6 +63,7 @@ ul {
 .image-perfil {
     border-radius: 0 6.25rem 6.25rem;
     width: 30%;
+    margin-top: 5rem;
 }
 
 .text-initial {
@@ -81,6 +78,8 @@ ul {
     background-color: #5398be;
     margin-top: 0.25rem;
 }
+
+/** estilização da sessão about-me **/
 
 .about-me {
     display: flex;
@@ -115,7 +114,7 @@ ul {
 
 .span-experience {
     font-weight: bold;
-    margin-top: 0;
+    margin-top: 4rem;
     font-size: 2em;
     text-align: center;
     color: #5398be;
@@ -124,13 +123,14 @@ ul {
 
 .box-experience {
     text-align: center;
-    width: 57%;
+    width: 58%;
     border: 1px solid #0000003b;
     border-radius: 0 1.25rem 1.25rem;
     padding: 1rem;
     box-shadow: -1px 4px 7px 5px lightgray;
     margin: 2rem;
-    display: flex
+    display: flex;
+    align-items: center;
 }
 
 .image-icon {
@@ -142,8 +142,55 @@ ul {
     font-weight: bold;
 }
 
+/** fim da estilização da sessão about-me **/
+
+.img-top-project {
+    width: 50%;
+}
+
+.container-project {
+    display: flex;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    box-shadow: -1px 4px 7px 5px lightgray;
+}
+
+.informations-project {
+    margin: 1rem;
+}
+
+.informations-project span {
+    color: #5398be;
+    font-weight: bold;
+}
+
+.informations-project a {
+    cursor: pointer;
+    padding: 0.3rem 0.4rem;
+    background-color: #5398be69;
+    font-family: math;
+    width: 45%;
+    border: 1px solid #5398be4a;
+    box-shadow: -1px 2px 13px 3px lightgray; /** cria uma sombra abaixo do elemento **/
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    font-size: 0.75em;
+}
+
 .project {
     margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 
 .contact {
@@ -181,7 +228,7 @@ h3 {
     font-size: 6em;
     font-family: math;
     text-align: center;
-    margin: 5rem 0 3rem;
+    margin: 5rem 0 4rem;
 }
 
 .skills {
@@ -197,7 +244,7 @@ h3 {
     align-items: center;
     box-shadow: -1px 4px 7px 5px lightgray;
     width: 7rem;
-    border-radius: 0 1.25rem 1.25rem;
+    border-radius: 0 1.25rem 1.25rem; /** bordas arredondadas **/
     padding-top: 1rem;
 }
 
@@ -237,7 +284,6 @@ h3 {
     padding: 1rem;
     box-shadow: -1px 4px 7px 5px lightgray;
     margin: 2rem;
-    display: flex;
 }
 
 .box-education span {

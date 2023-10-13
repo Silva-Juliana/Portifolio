@@ -11,15 +11,14 @@
         <nav class="navbar">
             <ul class="menu">
                 <li><a class="link-text1" href="#"> Home</a></li>
-                <li><a class="link-text" href="#"> Sobre mim</a></li>
-                <li><a class="link-text" href="#"> Projetos</a></li>
-                <li><a class="link-text" href="#"> Habilidades e Formação Educacional</a></li>
-                <li><a class="link-text" href="#"> Informações para Contato</a></li>
-        
+                <li><a class="link-text" href="#about-me"> Sobre mim</a></li>
+                <li><a class="link-text" href="#project"> Projetos</a></li>
+                <li><a class="link-text" href="#skills"> Habilidades e Formação Educacional</a></li>
+                <li><a class="link-text" href="#contact"> Informações para Contato</a></li>
             </ul>
         </nav>
-            <img class="text-portifolio" src="images/portifolio1.png">
     </div>
+    <!-- Sesão com informações pessoais e minhas experiências profissionais -->
     <div class="container-about">
         <div class="text-initial">
             <img class="image-perfil" src="images/perfil.jpg">
@@ -27,7 +26,7 @@
             <h2> Desenvolvedora Frontend</h2>
         </div>
         <div class="about-me">
-            <span class="span-about">Sobre mim</span>
+            <span class="span-about" id="about-me">Sobre mim</span>
             <p> 
                 Olá sou a Juliana, tenho 27 anos e moro em Barueri-SP.
                 Em janeiro de 2021 conclui meu bootcamp em Front-end. 
@@ -38,26 +37,62 @@
             </p>
         </div>
         <div class="experience"> 
-             <span class="span-experience">Experiência Profissional</span>
-             <div class="box-experience">
-            <img class="image-icon" src="images/programacao.png">
-                <p> <span>ECONVERSE DIGITAL | Desenvolvedora front-end junior, Março de 2021 - Julho de 2021</span>
-                 - Criar ou dar manutenção em páginas de e-commerce da plataforma Vtex, ultilização de Jquery, SCSS, Git, Javascript.
-                </p>
+            <span class="span-experience">Experiência Profissional</span>
+            <div class="box-experience">
+                <img class="image-icon" src="images/programacao.png">
+                    <p> <span>ECONVERSE DIGITAL | Desenvolvedora front-end junior, Março de 2021 - Julho de 2021</span>
+                        - Criar ou dar manutenção em páginas de e-commerce da plataforma Vtex, ultilização de Jquery, SCSS, Git, Javascript.
+                    </p>
             </div>
             <div class="box-experience">
                 <img class="image-icon" src="images/muffin.png">
                 <p> <span>JURÊ SEMPRE DOCE | Confeiteira </span>
-                     - Confecção e venda de bolos e doces gourmet para festas e eventos
+                    - Confecção e venda de bolos e doces gourmet para festas e eventos
                 </p>
             </div>
         </div>
     </div>
     <div class="project">
-        <div class="project-text"><h1> Meus Projetos</h1></div>
-        <div class="img-top-project"><img src="#"></div>
+        <div class="project-text"><h1 id="project"> Meus Projetos</h1></div>
+        <div class="box-project">
+            <div class="container-project">
+                <img class="img-top-project" src="images/tela1.png">
+                <div class="informations-project">
+                    <span>Logo Ipsun</span>
+                    <p>Layout de um site que apoia causas ambientais</p>
+                    <a href="https://silva-juliana.github.io/teste-nerau/" target="_blank">Acessar projeto</a>
+                </div>
+            </div>
+            <div class="container-project">
+                <img class="img-top-project" src="images/tela2.png">
+                <div class="informations-project">
+                    <span>Zappats</span>
+                    <p> Zappats é uma aplicação para login de usuários</p>
+                    <a href="https://silva-juliana.github.io/zappats/" target="_blank">Acessar projeto</a>
+                </div>
+            </div>
+        </div>
+        <div class="box-project">
+            <div class="container-project">
+                <img class="img-top-project" src="images/tela3.png">
+                <div class="informations-project">
+                    <span>Pokémon</span>
+                    <p>Formulário para realizar a pesquisa de Pokémon, pelo nome ou tipo</p>
+                    <a href="https://silva-juliana.github.io/gh-pages-buscar-pokemon/" target="_blank">Acessar projeto</a>
+                </div>
+            </div>
+            <div class="container-project">
+                <img class="img-top-project" src="images/tela4.png">
+                <div class="informations-project">
+                    <span>Folha</span>
+                    <p>Aplicação baseado no site da folha, onde é exibido as príncipais notícias</p>
+                    <a href="https://silva-juliana.github.io/testeProtarefa/" target="_blank">Acessar projeto</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <h3> Minhas habilidades</h3>
+    <!-- Icones das minhas habilidades -->
+    <h3 id="skills"> Minhas habilidades</h3>
     <div class="skills">
         <div class="box-skills">
             <img src="images/css-3.png">
@@ -87,9 +122,10 @@
             <p> <span>NEWTAB ACADEMY: BOOTCAMP</span>- Desenvolvimento front-end junior,setembro de 2020 - janeiro de 2021</p>
         </div>
     </div>
-    <h4> Informações para contato</h4>
+    <!-- Formulario para contato e informações para contato -->
+    <h4 id="contact"> Informações para contato</h4>
     <form class="my-form" method="post">
-            <img class="avatar" src="images/avatar3.png">
+        <img class="avatar" src="images/avatar3.png">
         <div class="box-form">
             <h5>Formulario de Contato :</h5>
             <label class="text-label">
@@ -128,7 +164,7 @@
             <span>Linkedin</span>
             <span class="span2">juliana-gomes-3ba03b14a </span>
         </a>
-        <a href="" target="_blank" class="box-contact">
+        <a href="mailto:silva.junia96@gmail.com" target="_blank" class="box-contact">
             <img class="img-icon" src="images/o-email.png">
             <span>Email</span>
             <span class="span2">silva.junia96@gmail.com </span>
